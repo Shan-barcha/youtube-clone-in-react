@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar";
 import Youtube from "./components/apis/Youtube";
 import VideosList from "./components/VideosList";
 import VideoDetail from "./components/VideoDetail";
+import Navbar from "./Navbar";
 
 class App extends React.Component {
     state = { videos :[], selectedVideo : null }
@@ -29,6 +30,9 @@ class App extends React.Component {
 
   render(){
     return(
+      <>
+      <Navbar />
+   
     <div className="App ui container ">
         <SearchBar onFormSubmit={this.onTermsubmit}/>
         <div className="ui grid">
@@ -42,6 +46,7 @@ class App extends React.Component {
      </div>
      </div>
     </div>
+    </>
     )
 }
 }
