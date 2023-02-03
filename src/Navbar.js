@@ -17,8 +17,17 @@ export default function Navbar() {
           <IconButton edge="start" color="red" aria-label="menu"  sx={{ mr: 2,  }}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" color="inherit" component="div">
+          <Typography variant="h6" color="inherit" component="div" sx={{ pr: 8,  }}>
             Videos
+          </Typography>
+          <Typography variant="h6" color="inherit" component="div" sx={{ pr: 8,  }}>
+            Library
+          </Typography>
+          <Typography variant="h6" color="inherit" component="div" sx={{ pr: 8,  }}>
+            Liked videos
+          </Typography>
+          <Typography variant="h6" color="inherit" component="div" sx={{ pr: 8,  }}>
+            Subscriptions
           </Typography>
         </Toolbar>
       </AppBar>
